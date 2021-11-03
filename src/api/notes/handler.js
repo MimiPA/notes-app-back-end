@@ -93,7 +93,7 @@ class NotesHandler {
         }
     }
 
-    putNoteByIdHandler(request) {
+    putNoteByIdHandler(request, h) {
         try {
             this._validator.validateNotePayload(request.payload);
             const { id } = request.params;
